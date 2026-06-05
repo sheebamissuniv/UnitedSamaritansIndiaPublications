@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry Sent | United Samaritans India Publications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="success-page">
+  <main class="success-shell">
+    <section class="success-card">
+      <img src="assets/publications-logo.png" alt="United Samaritans India Publications logo">
+      <span class="eyebrow">Contact Form Submitted</span>
+      <h1>Your Enquiry is sent successfully</h1>
+      <p>Thank you for contacting United Samaritans India Publications. Our team will review your message and respond soon.</p>
+      <a class="btn btn-gold" href="index.html">Return To Website</a>
+    </section>
+  </main>
+  <div class="whatsapp-widget" id="whatsappWidget">
+    <button class="whatsapp-float" id="whatsappOpen" type="button" aria-expanded="false" aria-controls="whatsappPopup">
+      <span class="whatsapp-icon" aria-hidden="true">WA</span>
+      <span>CHAT WITH US</span>
+    </button>
+
+    <section class="whatsapp-popup" id="whatsappPopup" aria-label="WhatsApp chat" aria-hidden="true">
+      <div class="whatsapp-popup-header">
+        <div>
+          <span>United Samaritans India</span>
+          <h2>Chat with Us</h2>
+        </div>
+        <button class="whatsapp-close" id="whatsappClose" type="button" aria-label="Close chat">x</button>
+      </div>
+      <div class="whatsapp-popup-body">
+        <p class="whatsapp-greeting">Hello! How can we help you today?</p>
+        <p class="whatsapp-response-time">Estimated response time: within a few minutes</p>
+        <p class="whatsapp-status" id="whatsappStatus" aria-live="polite"></p>
+        <label class="sr-only" for="whatsappMessage">Type your message</label>
+        <textarea id="whatsappMessage" rows="4" placeholder="Type your message here"></textarea>
+        <button class="whatsapp-send" id="whatsappSend" type="button">Send via WhatsApp</button>
+      </div>
+    </section>
+  </div>
+  <script src="whatsapp-widget.js"></script>
+</body>
+</html>
